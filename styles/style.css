@@ -1,6 +1,11 @@
 /* Google fonts embedding */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Removing default margin + padding */
+*{
+    margin: 0;
+    padding: 0;
+}
 
 /* Used fonts */
 .poppins {
@@ -25,3 +30,211 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+
+/* Common styles */
+
+/* Font colors */
+.black{
+    color: rgba(58, 58, 58, 1);
+}
+
+/* Font weights */
+.medium{
+    font-weight: 500;
+}
+.semi-bold{
+    font-weight: 600;
+}
+.bold{
+    font-weight: 700;
+}
+
+/* Font sizes */
+.size-14{
+    font-size: 0.9rem;
+}
+.size-24{
+    font-size: 1.5rem;
+}
+.size-28{
+    font-size: 1.75;
+}
+.size-38{
+    font-size: 2.4rem;
+}
+.size-52{
+    font-size: 3.25rem;
+}
+
+/* Buttons */
+.primary-btn{
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: rgba(224, 44, 109, 1);
+    padding: 15px 24px;
+    border: none;
+}
+.round-shaped-btn{
+    border-radius: 41px;
+}
+
+/* Layouts */
+.disp-flex{
+    display: flex;
+}
+.disp-grid{
+    display: grid;
+}
+.container{
+    max-width: 1188px;
+    margin: 0 auto;
+}
+
+/* Center aligned text */
+.txt-center{
+    text-align: center;
+}
+
+/* Section bottom margin */
+.bottom-100{
+    margin-bottom: 100px;
+}
+
+
+/* Header styles */
+
+/* Navbar styles */
+.nav{
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.nav-icon{
+    font-size: 1.5rem;
+}
+.menu{
+    align-items: center;
+    justify-content: space-between;
+    gap: 34px;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    text-decoration: none;
+    color: rgba(58, 58, 58, 1);
+}
+
+/* Banner */
+.banner{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.banner-txt p{
+    max-width: 505px;
+    margin: 20px 0 30px;
+}
+.banner-img{
+    background: url("../images/Circle\ design.svg") center / cover no-repeat;
+}
+.banner-img img{
+    width: 100%;
+}
+
+
+/* Body styles */
+
+/* Sponsors section */
+.sponsors{
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Product collection section */
+.section-title{
+    margin-bottom: 50px;
+}
+.product-gallery{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.product{
+    border-radius: 5px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+.product-img{
+    border-radius: 5px;
+}
+.product-img img{
+    width: 100%;
+}
+.product-title{
+    margin: 12px 0;
+}
+.product-rating{
+    margin: 20px 0 15px;
+    align-items: center;
+    gap: 10px;
+    height: 16px;
+}
+.stars{
+    color: gold;
+    align-items: center;
+}
+.product p{
+    line-height: 24px;
+}
+.see-more-div{
+    justify-content: flex-end;
+}
+.see-more-btn{
+    color: rgba(224, 44, 109, 0.87);
+    background-color: white;
+    padding: 10px 0;
+}
+
+
+/* Responsive Media Queries */
+/* Small device */
+@media screen and (max-width: 576px) {
+    /* Navbar styles */
+    .nav{
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        gap: 25px;
+    }
+    .menu{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* Banner */
+    .banner{
+        flex-direction: column-reverse;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+    .banner-img{
+        width: 70%;
+    }
+    .banner-txt p{
+        padding: 0 25px;
+    }
+
+    /* Body styles */
+    /* Sponsors section */
+    .sponsors{
+        flex-wrap: wrap;
+        padding: 0 15px;
+    }
+}
+
+
