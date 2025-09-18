@@ -10,13 +10,14 @@
 <body class="black">
     <header class="header container poppins">
         <nav class="nav disp-flex">
+            <i class="only-mobile-menu fa-solid fa-bars"></i>
             <h1 class="brand-intro bold size-24">Influencer Products</h1>
             <ul class="menu disp-flex semi-bold">
-                <li><a href="">Home</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">Sign Up</a></li>
-                <li><a href="">Login</a></li>
-                <li><a href=""><i class="nav-icon fa-solid fa-magnifying-glass"></i></a></li>
+                <li class="hide-for-mobile"><a href="">Home</a></li>
+                <li class="hide-for-mobile"><a href="">Products</a></li>
+                <li class="hide-for-mobile"><a href="">Sign Up</a></li>
+                <li class="hide-for-mobile"><a href="">Login</a></li>
+                <li class="hide-for-mobile"><a href=""><i class="nav-icon fa-solid fa-magnifying-glass"></i></a></li>
                 <li><a href=""><i class="nav-icon fa-solid fa-cart-plus"></i></a></li>
             </ul>
         </nav>
@@ -31,8 +32,8 @@
             </div>
         </div>
     </header>
-    <main class="main container poppins">
-        <section class="sponsors disp-flex bottom-100">
+    <main class="main poppins">
+        <section class="sponsors disp-flex">
             <img src="./logos/Alibaba.svg" alt="">
             <img src="./logos/Amazon.svg" alt="">
             <img src="./logos/Daraz.pk Logo.svg" alt="">
@@ -41,7 +42,7 @@
             <img src="./logos/Walmart.svg" alt="">
             <img src="./logos/Target.svg" alt="">
         </section>
-        <section class="product-collection container poppins bottom-100">
+        <section class="product-collection">
             <h2 class="section-title semi-bold size-28 txt-center">Popular Collection</h2>
             <div class="product-gallery disp-grid">
                 <div class="product">
@@ -196,7 +197,7 @@
                     <p class="product-info inter bold">Wordwide shifting <br> Available <br>
                     Buyers protection possible!</p>
                 </div>
-                <div class="product">
+                <div class="product hide-product">
                     <div class="product-img">
                         <img src="./images/action.png" alt="">
                     </div>
@@ -220,9 +221,27 @@
                 <button class="bottom-right primary-btn see-more-btn">See More <i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </section>
+        <section class="featured-product disp-flex">
+            <div class="feature-img">
+                <img src="./images/gear.png" alt="">
+            </div>
+            <div class="feature-info">
+                <h1 class="bold size-38">Featured products at one place</h1>
+                <p class="bold">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <button class="primary-btn">Join Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
     </main>
-    <footer class="footer">
-
+    <footer class="footer poppins">
+        <h2 class="bold size-24">Influencer products</h2>
+        <p class="manrope bold size-14">Copyright © 2020  influencer products</p>
+        <p class="manrope bold size-14">All rights reserved</p>
+        <ul class="social-links disp-flex">
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-globe"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
     </footer>
 </body>
 </html>
